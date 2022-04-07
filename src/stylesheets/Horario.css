@@ -1,0 +1,66 @@
+.horario-contenedor {
+	width: 250px;
+	min-height: 500px;
+	background: white;
+	border-radius: 5px;
+}
+
+.horario-superior-contenedor {
+	background: rgb(94, 111, 153);
+	margin: 30px 30px 0px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 10px 8px;
+	border-radius: 2px;
+}
+.horario-imagen {
+	width: 30px;
+}
+.horario-final {
+	flex-basis: 80%;
+	font-weight: 600;
+}
+.horario-final span {
+	margin-right: 8px;
+	font-size: 14px;
+}
+.horario-seleccion-contenedor {
+	margin: 10px;
+	border: 1px solid red;
+	min-height: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	font-size: 13px;
+	font-weight: bold;
+	color: black;
+	position: relative;
+	padding: 12px 0;
+}
+.horario-seleccion-contenedor::before {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-style: solid;
+	border-color: orange transparent transparent transparent;
+	border-width: 7px 5px 5px 5px;
+}
+.horario-seleccion-contenedor::after {
+	content: '';
+	position: absolute;
+	bottom: -7px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-style: solid;
+	border-color: transparent transparent orange transparent;
+	border-width: 5px 5px 7px 5px;
+}
+.horario-seleccion-horas {
+}
+.horario-seleccion-minutos {
+}
