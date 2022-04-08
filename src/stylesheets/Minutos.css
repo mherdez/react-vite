@@ -1,0 +1,23 @@
+.horario-seleccion-minutos {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 25px;
+}
+.minutos {
+	user-select: none;
+}
+.minuto0 {
+	opacity: 1;
+}
+.minuto1 {
+	opacity: 0.4;
+}
+.minuto2 {
+	opacity: 0.2;
+}
+.input-range {
+	margin-top: 5px;
+	width: 200px;
+	height: 20px;
+	opacity: 0.3;
+}

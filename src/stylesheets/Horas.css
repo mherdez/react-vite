@@ -1,0 +1,23 @@
+.horario-seleccion-horas {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 25px;
+}
+.horas {
+	user-select: none;
+}
+.hora0 {
+	opacity: 1;
+}
+.hora1 {
+	opacity: 0.4;
+}
+.hora2 {
+	opacity: 0.2;
+}
+.input-range {
+	margin-top: 5px;
+	width: 200px;
+	height: 20px;
+	opacity: 0.3;
+}

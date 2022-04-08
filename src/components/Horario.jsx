@@ -1,43 +1,38 @@
-import '../stylesheets/Horario.css';
-import morning from '../assets/images/morning.png';
 import { useState } from 'react';
 
-function Horario() {
-	const [min, setMin] = useState(10);
-	// let minutos = [];
+import '../stylesheets/Horario.css';
+import Minutos from './Minutos';
+import Horas from './Horas';
+import ImagenTime from './ImagenTime';
 
-	// for (let i = 0; i < 60; i++) {
-	// 	minutos.push(i < 10 ? '0' + i : i);
-	// }
+function Horario({ inicio = 9 }) {
+	const [hrs, setHrs] = useState(inicio);
+	const [min, setMin] = useState(0);
 
-	const handdleChange = (e) => {
-		setMin(e.target.value);
+	let horarioTexto = hrs < 10 ? `0${hrs}` : hrs;
+	horarioTexto += ':';
+	horarioTexto += min < 10 ? `0${min}` : min;
+
+	const handdleChangeHrs = (e) => {
+		setHrs(e.target.value * 1);
+	};
+	const handdleChangeMin = (e) => {
+		setMin(e.target.value * 1);
 	};
 
 	return (
 		<div className='horario-contenedor'>
 			<div className='horario-superior-contenedor'>
-				<img
-					className='horario-imagen'
-					src={morning}
-					alt=''
-				/>
+				<ImagenTime hrs={hrs} />
 				<p className='horario-final'>
-					<span>Time</span> 09 : 27
+					<span>Time</span> {hrs < 10 ? '0' : ''}
+					{hrs} : {min < 10 ? '0' : ''}
+					{min}
 				</p>
 			</div>
 			<div className='horario-seleccion-contenedor'>
-				<p className='horario-seleccion-horas'>1</p>
-				<p>{min}</p>
-				<input
-					type='range'
-					name=''
-					id=''
-					min={0}
-					max={59}
-					onChange={handdleChange}
-					value={min}
-				/>
+				<Horas hrs={hrs} handdleChange={handdleChangeHrs} />
+				<Minutos min={min} handdleChange={handdleChangeMin} />
 			</div>
 		</div>
 	);
