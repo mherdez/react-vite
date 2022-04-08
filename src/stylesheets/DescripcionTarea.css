@@ -1,0 +1,14 @@
+.form-textarea {
+	font-family: sans-serif;
+	padding: 10px;
+	width: 87%;
+	border: none;
+	background: rgb(245 245 245 / 50%);
+	resize: none;
+	line-height: 1.5rem;
+	font-size: 1rem;
+	margin-bottom: 3px;
+}
+.form-textarea:focus {
+	outline: none;
+}

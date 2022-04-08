@@ -1,0 +1,27 @@
+.form-prioridad {
+	color: black;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.9rem;
+}
+
+.form-prior-normal,
+.form-prior-urgente {
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	flex: 1;
+	border: 1px solid rgba(96, 118, 165, 0.3);
+	padding: 10px;
+	cursor: pointer;
+	background: none;
+	font-size: 0.9rem;
+	font-weight: bold;
+}
+.form-prior-urgente:hover,
+.form-prior-normal:hover {
+	background: rgb(96, 118, 165);
+	color: white;
+}
