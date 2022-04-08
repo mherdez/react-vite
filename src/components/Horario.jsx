@@ -32,7 +32,11 @@ function Horario({ inicio = 9 }) {
 			</div>
 			<div className='horario-seleccion-contenedor'>
 				<Horas hrs={hrs} handdleChange={handdleChangeHrs} />
-				<Minutos min={min} handdleChange={handdleChangeMin} />
+				<Minutos
+					min={min}
+					handdleChange={handdleChangeMin}
+					step={5}
+				/>
 			</div>
 		</div>
 	);

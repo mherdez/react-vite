@@ -1,7 +1,7 @@
 import './stylesheets/App.css';
 import Titulo from './components/Titulo';
-import Horario from './components/Horario';
 import Referencia from './components/Referencia';
+import Formulario from './components/Formulario';
 
 function App() {
 	return (
@@ -10,7 +10,7 @@ function App() {
 				<Titulo titulo='Todo List v1.0' />
 				<div className='temporal'>
 					<Referencia />
-					<Horario inicio={12} />
+					<Formulario />
 				</div>
 			</div>
 		</div>
