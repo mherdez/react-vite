@@ -22,7 +22,7 @@
 }
 .horario-final span {
 	margin-right: 8px;
-	font-size: 14px;
+	font-size: 0.9rem;
 }
 .horario-seleccion-contenedor {
 	margin: 10px 0;
@@ -33,12 +33,19 @@
 	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
-	font-size: 13px;
+	font-size: 0.8rem;
 	font-weight: bold;
 	color: black;
 	position: relative;
 	padding: 12px 0;
-	background: rgb(235 235 235 / 10%);
+	background: linear-gradient(
+		90deg,
+		rgba(104 95 119 /0%) 0%,
+		rgba(104 95 119 /10%) 25%,
+		rgba(104 95 119 /20%) 50%,
+		rgba(104 95 119 /10%) 75%,
+		rgba(104 95 119 /0%) 100%
+	);
 }
 .horario-seleccion-contenedor::before {
 	content: '';
@@ -59,6 +66,4 @@
 	border-style: solid;
 	border-color: transparent transparent orange transparent;
 	border-width: 5px 5px 7px 5px;
-}
-.horario-seleccion-horas {
 }
