@@ -1,6 +1,7 @@
 import '../stylesheets/Minutos.css';
 
 function Minutos({ min, handdleChange, step }) {
+	step = 60 % step !== 0 || step < 1 ? 5 : step;
 	return (
 		<div>
 			<div className='horario-seleccion-minutos'>
