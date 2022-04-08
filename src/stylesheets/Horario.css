@@ -25,7 +25,7 @@
 	font-size: 14px;
 }
 .horario-seleccion-contenedor {
-	margin: 10px;
+	margin: 10px 0;
 	/* border: 1px solid red; */
 	min-height: 40px;
 	display: flex;
@@ -38,7 +38,7 @@
 	color: black;
 	position: relative;
 	padding: 12px 0;
-	background: rgb(235 235 235 / 50%);
+	background: rgb(235 235 235 / 10%);
 }
 .horario-seleccion-contenedor::before {
 	content: '';

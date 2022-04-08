@@ -1,23 +1,35 @@
 .horario-seleccion-horas {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	gap: 25px;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 20px;
+	width: 240px;
+	box-sizing: border-box;
+	align-items: center;
+	justify-content: center;
 }
 .horas {
 	user-select: none;
+	width: 17px;
 }
 .hora0 {
 	opacity: 1;
+	font-size: 1.2em;
 }
 .hora1 {
-	opacity: 0.4;
+	opacity: 0.35;
+	font-size: 1.1em;
 }
 .hora2 {
+	font-size: 1em;
 	opacity: 0.2;
+}
+.hora3 {
+	opacity: 0.05;
+	font-size: 0.9em;
 }
 .input-range {
 	margin-top: 5px;
-	width: 200px;
+	width: 180px;
 	height: 20px;
 	opacity: 0.3;
 }
